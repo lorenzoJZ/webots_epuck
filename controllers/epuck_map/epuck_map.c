@@ -34,7 +34,7 @@ float convert_intensity_to_meters(float prox) {
 }
  
 void salvar_posicao_distancias(FILE *log, const double * p, const double * r, float d[8]){
-    fprintf(log, "%f %f %f %f %f %f %f ", p[0], p[1], p[2], r[0], r[1], r[2], r[3]);
+    fprintf(log, "%f %f %f ", p[0], p[2], (r[1] < 0 ? -r[3] : r[3]) );
     for(int i = 0; i < 8; i++) {
       fprintf(log, "%f ", d[i]);
     }
