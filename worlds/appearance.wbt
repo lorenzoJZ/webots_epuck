@@ -52,7 +52,7 @@ DEF WALL_1 Solid {
         metalness 0
       }
       geometry Box {
-        size 0.02 0.1 0.98
+        size 0.02 0.1 1.02
       }
     }
   ]
